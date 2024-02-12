@@ -16,7 +16,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            color:#ffffff;
+            color: #f1f1f1;;
         }
     </style>
 
@@ -28,11 +28,100 @@
                 <h1 class="md:text-[2.875rem] text-[1.8rem] text-[#111111CC] font-bold">Interactive</h1>
                 <p class="md:text-[1.875rem] text-[1rem] text-[#11111199] font-medium">Geometry Genius</p>
             </div>
-            <button class="sm:text-[1.25rem] text-[#ffffff] font-bold px-10 py-2 rounded-[8px] bg-[#1090D8]">Blog</button>
+            <button class="sm:text-[1.25rem] text-[#ffffff] font-bold px-10 py-2 rounded-[8px] bg-[#1090D8] ">Blog</button>
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <div class="mt-[50px] flex flex-col lg:flex-row flex-1 gap-6">
+            <div class="grid xl:grid-cols-3 xl:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 gap-5">
+            <!-- ------calculation section----------- -->
+                <!-- triangle area calculation div -->
+                <div class="p-8 sm:py-10 md:py-10 sm:px-10 md:px-10 border-[1px] border-[#1111111a] rounded-[8px] text-center flex flex-col items-center justify-end">
+                    <img src="images/triangle.png" alt="Triangle Picture" class="w-full">
+                    <h2 class="md:text-[1.5rem] text-[1.25rem] text-[#414141] font-bold mt-8 md:mt-12">Triangle</h2>
+                    <p class="text-[#414141] mt-2 mb-5">Area (A) = 0.5 X b X h</p>
+                    <div class="flex gap-4 flex-col md:flex-row">
+                        <div><input type="text" name="text" id="" placeholder="base" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+
+                        <div><input type="text" name="text" id="" placeholder="height" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+                    </div>
+                    <button class="sm:text-[1.25rem] text-[#ffffff] font-bold px-10 py-2 rounded-[8px] bg-[#1090D8] w-full mt-12">Calculate</button>
+                </div>
+
+            <!-- rectangle area calculation div -->
+                <div class="p-8 sm:py-10 md:py-10 sm:px-10 md:px-10 border-[1px] border-[#1111111a] rounded-[8px] text-center flex flex-col items-center justify-end">
+                    <img src="images/rectangle.png" alt="Rectangle Picture" class="w-full">
+                    <h2 class="md:text-[1.5rem] text-[1.25rem] text-[#414141] font-bold mt-8 md:mt-12">Rectable</h2>
+                    <p class="text-[#414141] mt-2 mb-5">Area (A) = w X l</p>
+                    <div class="flex gap-4 flex-col md:flex-row">
+                        <div><input type="text" name="text" id="" placeholder="width" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+
+                        <div><input type="text" name="text" id="" placeholder="length" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+                    </div>
+                    <button class="sm:text-[1.25rem] text-[#ffffff] font-bold px-10 py-2 rounded-[8px] bg-[#1090D8] w-full mt-12">Calculate</button>
+                </div>
+
+                <!-- parallelgram area calcultaion div -->
+                <div class="p-8 sm:py-10 md:py-10 sm:px-10 md:px-10 border-[1px] border-[#1111111a] rounded-[8px] text-center flex flex-col items-center justify-end">
+                    <img src="images/parallelogram.png" alt="Parallelogram Picture" class="w-full">
+                    <h2 class="md:text-[1.5rem] text-[1.25rem] text-[#414141] font-bold mt-8 md:mt-12">Parallelogram</h2>
+                    <p class="text-[#414141] mt-2 mb-5">Area (A) = b X h</p>
+                    <div class="flex gap-4 flex-col md:flex-row">
+                        <div><input type="text" name="text" id="" placeholder="base" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+
+                        <div><input type="text" name="text" id="" placeholder="height" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+                    </div>
+                    <button class="sm:text-[1.25rem] text-[#ffffff] font-bold px-10 py-2 rounded-[8px] bg-[#1090D8] w-full mt-12">Calculate</button>
+                </div>
+
+                <!-- rhombus area calculation div -->
+                <div class="p-8 sm:py-10 md:py-10 sm:px-10 md:px-10 border-[1px] border-[#1111111a] rounded-[8px] text-center flex flex-col items-center justify-end">
+                    <img src="images/rhombus.png" alt="Rhombus Picture" class="w-full">
+                    <h2 class="md:text-[1.5rem] text-[1.25rem] text-[#414141] font-bold mt-8 md:mt-12">Rhombus</h2>
+                    <p class="text-[#414141] mt-2 mb-5">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                    <div class="flex gap-4 flex-col md:flex-row">
+                        <div><input type="text" name="text" id="" placeholder="value" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+
+                        <div><input type="text" name="text" id="" placeholder="value" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+                    </div>
+                    <button class="sm:text-[1.25rem] text-[#ffffff] font-bold px-10 py-2 rounded-[8px] bg-[#1090D8] w-full mt-12">Calculate</button>
+                </div>
+
+                <!-- pentagon area calculation div -->
+                <div class="p-8 sm:py-10 md:py-10 sm:px-10 md:px-10 border-[1px] border-[#1111111a] rounded-[8px] text-center flex flex-col items-center justify-end">
+                    <img src="images/pentagon.png" alt="Pentagon Picture" class="w-full">
+                    <h2 class="md:text-[1.5rem] text-[1.25rem] text-[#414141] font-bold mt-8 md:mt-12">Pentagon</h2>
+                    <p class="text-[#414141] mt-2 mb-5">Area (A) = 0.5 X p X b</p>
+                    <div class="flex gap-4 flex-col md:flex-row">
+                        <div><input type="text" name="text" id="" placeholder="p" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+
+                        <div><input type="text" name="text" id="" placeholder="b" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+                    </div>
+                    <button class="sm:text-[1.25rem] text-[#ffffff] font-bold px-10 py-2 rounded-[8px] bg-[#1090D8] w-full mt-12">Calculate</button>
+                </div>
+
+                <!-- ellipse area calculation div -->
+                <div class="p-8 sm:py-10 md:py-10 sm:px-10 md:px-10 border-[1px] border-[#1111111a] rounded-[8px] text-center flex flex-col items-center justify-end">
+                    <img src="images/ellipse.png" alt="Ellipse Picture" class="w-full">
+                    <h2 class="md:text-[1.5rem] text-[1.25rem] text-[#414141] font-bold mt-8 md:mt-12">Ellipse</h2>
+                    <p class="text-[#414141] mt-2 mb-5">Area (A) = πab</p>
+                    <div class="flex gap-4 flex-col md:flex-row">
+                        <div><input type="text" name="text" id="" placeholder="a" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+
+                        <div><input type="text" name="text" id="" placeholder="b" class="text-[#414141] font-normal rounded-[4px] bg-[#f1f1f1] px-3 py-2 mr-2 w-20"><label for="text" class="text-[#414141] font-normal">cm</label></div>
+                    </div>
+                    <button class="sm:text-[1.25rem] text-[#ffffff] font-bold px-10 py-2 rounded-[8px] bg-[#1090D8] w-full mt-12">Calculate</button>
+                </div>
+            
+            </div>
+
+            <!-- ----calculation result section---- -->
+            <div class="sm:py-7 py-4 sm:px-9 px-4 border-[1px] border-[#1111111a] rounded-[8px]">
+                <p class="text-[1.25rem] text-[#111111cc] font-bold underline text-center">Area Calculation</p>
+            </div>
+        </div>
+    </main>
 
 
 </body>
